@@ -1,0 +1,25 @@
+{
+  "name": "group-project-2",
+  "version": "1.0.0",
+  "description": "A collaborative group assignment, by Ben, Connor, Bella and Jo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bendemic90/group-project-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bendemic90/group-project-2/issues"
+  },
+  "homepage": "https://github.com/bendemic90/group-project-2#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.5.1"
+  }
+}
