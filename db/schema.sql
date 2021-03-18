@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS codelet_db;
+DROP DATABASE IF EXISTS dcode_db;
 
-CREATE DATABASE codelet_db;
+CREATE DATABASE dcode_db;
