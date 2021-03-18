@@ -26,9 +26,14 @@ router.get('/', async (req, res) => {
     }
 });
 
-router.get('/:id', (req, res) => {
+router.get('/:id', async (req, res) => {
     try {
         const user = await User.findByPk(req.params.id);
+
+        if(user == null)
+            res.status(404).json({message: `User with id ${req.params.id} not found!`});
+        else
+            res.status(200).json(user);  
         res.status(200).json(user);  
     } catch(err) {
         res.status(500).json(err);
@@ -40,7 +45,11 @@ router.get('/:id', (req, res) => {
 router.put('/:id', async (req, res) => {
     try {
         const user = await User.update(req.body, { where: { id: req.params.id } });
-        res.status(200).json(user);  
+
+        if(user == null)
+            res.status(404).json({message: `User with id ${req.params.id} not found!`});
+        else
+            res.status(200).json(user);    
     } catch(err) {
         res.status(500).json(err);
     }
@@ -51,8 +60,14 @@ router.put('/:id', async (req, res) => {
 router.delete('/:id', async (req, res) => { 
     try {
         const user = await User.destroy({ where: { id: req.params.id }});
-        res.status(200).json(user);  
+
+        if(user == null)
+            res.status(404).json({message: `User with id ${req.params.id} not found!`});
+        else
+            res.status(200).json(user);  
     } catch(err) {
         res.status(500).json(err);
     }
 });
+
+module.exports = router;
