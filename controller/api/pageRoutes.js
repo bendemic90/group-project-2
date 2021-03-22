@@ -104,7 +104,6 @@ router.get('/:id', async (req, res) => {
 
         if(page == null) {
             res.status(404).json({ message: "Could not find page with id: " + req.params.id });
-            return;
         }
 
         res.status(200).json(page);
@@ -127,7 +126,6 @@ router.put('/:id', async (req, res) => {
 
         if(page == null) {
             res.status(404).json({ message: "Could not find page with id: " + req.params.id });
-            return;
         }
 
         res.status(200).json(page);
@@ -149,7 +147,6 @@ router.put('/:id/data/:data_id', async (req, res) => {
 
         if(page == null) {
             res.status(404).json({ message: "Could not find page with id: " + req.params.id });
-            return;
         }
 
         res.status(200).json(page);
@@ -191,7 +188,6 @@ router.delete('/:id/data/:data_id', async (req, res) => {
 
         if(page == null) {
             res.status(404).json({ message: "Could not find page with id: " + req.params.id });
-            return;
         }
 
         res.status(200).json(page);
