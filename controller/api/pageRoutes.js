@@ -3,7 +3,29 @@ const { Router } = require('express');
 const { Page, PageData, User } = require('../../models');
 
 // CREATE
+// Create new page
 router.post('/', async (req, res) => {
+    // {
+    //     "name": "NAME",
+    //     "description": "DESCRIPTION",
+    //     "pageData": [
+    //         {
+    //             "page_id": PAGEID_NUM,
+    //             "heading": "HEADING",
+    //             "data": "DATA",
+    //             "is_reply": false,
+    //             "reply_user_id": null 
+    //         },
+    //         {
+    //             "page_id": PAGEID_NUM,
+    //             "heading": "HEADING",
+    //             "data": "DATA",
+    //             "is_reply": true,
+    //             "reply_user_id": USERID_NUM
+    //         }
+    //     ]
+    // }
+
     const pageInfo = { name: req.body.name, description: req.body.description };
 
     let pageData = [];
@@ -35,6 +57,13 @@ router.post('/', async (req, res) => {
 
 // Create data for a page using id
 router.post('/:id', async (req, res) => {
+    //  {
+    //      "heading": "HEADING",
+    //      "data": "DATA",
+    //      "is_reply": true,
+    //      "reply_user_id": USERID_NUM
+    //  }
+    
     try {
         const pd = await PageData.create({
             page_id: req.params.id,
@@ -87,6 +116,7 @@ router.get('/:id', async (req, res) => {
 
 // UPDATE
 
+// Update page
 router.put('/:id', async (req, res) => {
     try {
         const page = await Page.update(req.body, { 
@@ -107,6 +137,7 @@ router.put('/:id', async (req, res) => {
     }
 });
 
+// Update page data
 router.put('/:id/data/:data_id', async (req, res) => {
     try {
         const page = await PageData.update(req.body, { 
