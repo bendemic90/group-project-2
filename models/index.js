@@ -3,10 +3,8 @@ const User = require('./User');
 const Page = require('./Page');
 const PageData = require('./PageData');
 
-Page.hasMany(PageData, { foreignKey: "page_id" });
+Page.hasMany(PageData);
 PageData.belongsTo(Page);
-
-PageData.hasOne(User);
 
 module.exports = {
   User,
