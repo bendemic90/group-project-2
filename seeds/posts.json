@@ -1,0 +1,14 @@
+[
+    {
+      "name": "Blog 1",
+      "description": "A blog about things."
+    },
+    {
+      "name": "Blog 2",
+      "description": "Another blog but this time about more interesting things than Blog 1"
+    },
+    {
+      "name": "Blog 3",
+      "description": "The final form of blogging, superceding all previous blogs."
+    }
+  ]
