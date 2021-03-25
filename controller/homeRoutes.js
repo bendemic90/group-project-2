@@ -19,8 +19,15 @@ router.get('/map', async (req, res) => {
   } catch (err) {
     res.status(500).json(err)
   }
-  
-})
+});
+
+router.get('/string-length', async (req, res) => {
+  try {
+  res.render('stringlen');
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
