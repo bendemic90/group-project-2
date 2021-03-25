@@ -19,7 +19,30 @@ router.get('/map', async (req, res) => {
   } catch (err) {
     res.status(500).json(err)
   }
-  
+})
+
+router.get('/stringlength', async (req, res) => {
+  try {
+  res.render('stringlen')
+  } catch (err) {
+    res.status(500).json(err)
+  }
+})
+
+router.get('/parseint', async (req, res) => {
+  try {
+  res.render('parseint')
+  } catch (err) {
+    res.status(500).json(err)
+  }
+})
+
+router.get('/numbertostring', async (req, res) => {
+  try {
+  res.render('numtostr')
+  } catch (err) {
+    res.status(500).json(err)
+  }
 })
 
 router.get('/login', (req, res) => {
