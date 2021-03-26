@@ -37,6 +37,7 @@ const signupFormHandler = async (event) => {
     });
 
     if (response.ok) {
+      alert('Congrats! You can now sign in to your account :D');
       document.location.replace('/');
     } else {
       alert(response.statusText);
