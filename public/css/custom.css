@@ -1,4 +1,9 @@
-#logo {
+#logo,
+#logoMobile {
     font-family: 'Monoton', cursive;
-    font-size: 3.2vw;
+    font-size: xx-large;
+}
+
+.exampleImg {
+    width: 50vw
 }

@@ -1,28 +1,53 @@
-<div>
-    <h3>Definition:</h3><p>
-    The map() method creates a NEW array, based on the OLD array, whose results are TRANSFORMED by the parameters input by the user.<br>
-        The original array will be unmodified.<br>
-        The parameter could be a seperate function that is called, or it could be a simple math operation (x + 1).<br>
-    </p>
-    <hr>
-    <h3>Example 1: The Basics</h3>
-    <code>
-        const array = <em>[1,2,3,4]</em> <br>
-        const <b>map</b> = array.<b>map</b>(x => x * 2) <br>
-        return <b>map</b>; // <em>[2,4,6,8]</em><br>
-        Will return a new array where each element(x) is doubled (x * 2):    
-    </code>
-    <hr>
+<div class="row">
+    <!-- Dropdown Card Example -->
+    <div class="col">
+        <div class="card shadow mb-4">
+            <!-- Card Header - Dropdown -->
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h1 class="m-0 font-weight-bold text-dark">.Map</h1>
+                <div class="dropdown no-arrow">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                        aria-labelledby="dropdownMenuLink">
+                        <div class="dropdown-header">Dropdown Header:</div>
+                        <a class="dropdown-item" href="#">Save Me To Your Favourite!</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card Body -->
+            <div class="card-body">
+                <div>
+                    <h3>Definition:</h3>
+                    <p>
+                        The map() method creates a NEW array, based on the OLD array, whose results are TRANSFORMED by
+                        the
+                        parameters input by the user.<br>
+                        The original array will be unmodified.<br>
+                        The parameter could be a seperate function that is called, or it could be a simple math
+                        operation (x
+                        + 1).<br>
+                    </p>
+                    <hr>
+                    <h3>Example 1: The Basics</h3>
+                    <p>
+                        <br>
+                        Will return a new array where each element(x) is doubled (x * 2):
+                    </p>
+                    <br>
+                    <img src="/img/map1.png" class="exampleImg">
+                    <hr>
 
-    <h3>Example 2: Passing a function() as the parameter</h3>
-    <code>
-        const array = [2,4,5,9,11,12] <br><br>
-        const evenNum = (num) => { <br>
-            return !(num % 2); <br>
-        } <br>
-        <em>This function will return TRUE if the number is EVEN, and FALSE if the number is ODD</em><br><br>
-        const map = array.map(num => evenNum(num));<br>
-        return map; // <em>[true, true, false, false, false, true]</em>
-
-    </code>
-</div>
+                    <h3>Example 2: Passing a function() as the parameter</h3>
+                    <p>
+                        <br>
+                        This function will return TRUE if the number is EVEN, and FALSE if the number is ODD.
+                    </p>
+                    <br>
+                    <img src="/img/map2.png" class="exampleImg">
+                </div>
+            </div>
+        </div>
+    </div>
