@@ -19,15 +19,31 @@ router.get('/map', async (req, res) => {
   } catch (err) {
     res.status(500).json(err)
   }
-});
+})
 
-router.get('/string-length', async (req, res) => {
+router.get('/stringlength', async (req, res) => {
   try {
-  res.render('stringlen');
+  res.render('stringlen')
   } catch (err) {
-    res.status(500).json(err);
+    res.status(500).json(err)
   }
-});
+})
+
+router.get('/parseint', async (req, res) => {
+  try {
+  res.render('parseint')
+  } catch (err) {
+    res.status(500).json(err)
+  }
+})
+
+router.get('/numbertostring', async (req, res) => {
+  try {
+  res.render('numtostr')
+  } catch (err) {
+    res.status(500).json(err)
+  }
+})
 
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
