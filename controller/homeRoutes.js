@@ -21,13 +21,6 @@ router.get('/map', async (req, res) => {
   }
 })
 
-router.get('/stringlength', async (req, res) => {
-  try {
-  res.render('stringlen')
-  } catch (err) {
-    res.status(500).json(err)
-  }
-})
 
 router.get('/parseint', async (req, res) => {
   try {

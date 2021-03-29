@@ -1,0 +1,56 @@
+<div>
+       <h1> parseInt()</h1>
+       <h3>Definition: </h3>
+       <p> is a function that converts string to integer or NaN (not a number). <br>
+              > If the first character can not be converted to a number, it returns a NaN. <br>
+              > If the value is not NaN, the value will return an INTEGER. <br>
+              > Only the first number in the string is returned. <br>
+       </p>
+
+       <h3> Example 1: The Basics</h3>
+       <code> Input: var z = parseInt("2021@let it be the best year");<br>
+           Output: z = 2021
+    </code>
+       //will only parse the first character <br>
+       <code>Input: var b = parseInt("3000");<br>
+              Output: b = 3000
+    </code>
+       //3000(number) <br>
+       <code> Input: var z = parseInt("geeksforgeeks@2018"); <br>
+              Output: z = NaN 
+    </code> // it returns a NaN on non numeral character <br>
+       <hr>
+       <h3> Example 2: Parse different strings </h3>
+       <code> Input: 
+          a = parseInt("100");
+          document.write('parseInt("100") = ' + a + "<br>");
+       </code> // it returns the number/integer <br>
+       <code>
+          b = parseInt ("2021@geeksforgeeks");
+          document.write('parseInt("2021@geeksforgeeks") = ' + b + "<br>");
+       </code> // it returns an integer <br>
+
+       <code>
+          c = parseInt ("geeksforgeeks@2021");
+          document.write('parseInt("geeksforgeeks@2021") =' + c + "<br>");
+       </code> // it returns NaN for non numeric character <br>
+
+       <code>
+          d = parseInt ("3.14");
+          document.write('parseInt("3.14") = ' + d + "<br>");      
+       </code> // it will return the integer value of a floating point number <br>
+
+       <code>
+          e = parseInt("27 03 2021");
+          document.write('parseInt("27 03 2021") = ' + e + "<br>");   
+       </code> // it will only return the first number <br>
+    <code>
+       Output: <br>
+        parseInt("100") = 100 <br>
+        parseInt("2021@geeksforgeeks") = 2021 <br>
+        parseInt("geeksforgeeks@2021") = NaN <br> 
+        parseInt("3.14") = 3 <br>
+        parseInt("27 03 2021") = 27 <br>
+    </code>
+
+</div>
