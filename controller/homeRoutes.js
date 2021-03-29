@@ -15,7 +15,9 @@ router.get('/', async (req, res) => {
 
 router.get('/map', async (req, res) => {
   try {
-  res.render('map')
+    res.render('map', { 
+      logged_in: req.session.logged_in 
+    });
   } catch (err) {
     res.status(500).json(err)
   }
@@ -24,7 +26,9 @@ router.get('/map', async (req, res) => {
 
 router.get('/parseint', async (req, res) => {
   try {
-  res.render('parseint')
+    res.render('parseint', { 
+      logged_in: req.session.logged_in 
+    });
   } catch (err) {
     res.status(500).json(err)
   }
@@ -32,7 +36,9 @@ router.get('/parseint', async (req, res) => {
 
 router.get('/numbertostring', async (req, res) => {
   try {
-  res.render('numtostr')
+    res.render('numtostr', { 
+      logged_in: req.session.logged_in 
+    });
   } catch (err) {
     res.status(500).json(err)
   }
