@@ -13,6 +13,12 @@ DCODE is a modern tool for developers, specifically full-stack developers. The c
 ## Deployed URL
 https://arcane-waters-44478.herokuapp.com/
 
+## Future developments
+- Search functionality
+- Favourites
+- Greater DCODE catalogue
+- Proposing changes
+
 ## Built with
 - Handlebars render engine
 - Javascript
