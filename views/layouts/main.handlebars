@@ -30,7 +30,10 @@
     <ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
+        <div class="sidebar-brand-icon rotate-n-15 d-block d-md-none">
+          <i class="fas" id="logoMobile">D</i>
+        </div>
         <div class="sidebar-brand-text mx-3" id="logo">DCODE</div>
       </a>
 
@@ -39,19 +42,19 @@
 
       <!-- Nav Item -  -->
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="../map">
           <i class="fas fa-fw fa-code"></i>
-          <span>ITEM</span></a>
+          <span>.Map</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="../numbertostring">
           <i class="fas fa-fw fa-code"></i>
-          <span>ITEM</span></a>
+          <span>.NumToStr</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="../parseint">
           <i class="fas fa-fw fa-code"></i>
-          <span>ITEM</span></a>
+          <span>.ParseInt</span></a>
       </li>
 
     </ul>
@@ -67,7 +70,7 @@
         <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
           <!-- Search -->
-          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+          <form class="d-block d-sm-inline-block form-inline mr-auto ml-sm-3 my-2 my-sm-0 mw-100 navbar-search">
             <div class="input-group">
               <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
                 aria-label="Search" aria-describedby="basic-addon2">
@@ -81,29 +84,6 @@
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
-
-            <!-- Nav Item - Search Dropdown (Visible Only XS) NEEDS WORK!!!!!-->
-            <li class="nav-item dropdown no-arrow d-sm-none">
-              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-search fa-fw"></i>
-              </a>
-              <!-- Dropdown - Messages -->
-              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
-                aria-labelledby="searchDropdown">
-                <form class="form-inline mr-auto w-100 navbar-search">
-                  <div class="input-group">
-                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                      aria-label="Search" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                      <button class="btn btn-dark" type="button">
-                        <i class="fas fa-search fa-sm"></i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </li>
 
             {{!-- Login/Logout/Sign Up Forms --}}
             <nav class="cd-main-nav js-main-nav">
@@ -247,83 +227,44 @@
         </nav>
         <!-- End of Topbar -->
 
-        <!-- Begin Page Content -->
-        <div class="container-fluid">
-
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Let's DCODE!</h1>
-          </div>
-
-          <!-- Content Row -->
-
-          <div class="row">
-            <!-- Dropdown Card Example -->
-            <div class="card shadow mb-4">
-              <!-- Card Header - Dropdown -->
-              <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                <h6 class="m-0 font-weight-bold text-dark">Dropdown Card Example</h6>
-                <div class="dropdown no-arrow">
-                  <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                    aria-labelledby="dropdownMenuLink">
-                    <div class="dropdown-header">Dropdown Header:</div>
-                    <a class="dropdown-item" href="#">Save Me To Your Favourite!</a>
-                  </div>
-                </div>
-              </div>
-              <!-- Card Body -->
-              <div class="card-body">
-                The styling for this basic card example is created by using default Bootstrap
-                utility classes. By using utility classes, the style of the card component can be
-                easily modified with no need for any custom CSS!
-                <!-- change from card eventually -->
-                {{{ body }}}
-              </div>
-            </div>
-
-
-          </div>
-
-          <!-- Content Row -->
-
-
-        </div>
-        <!-- /.container-fluid -->
-
+        {{{ body }}}
       </div>
-      <!-- End of Main Content -->
-
-      <!-- Footer -->
-      <footer class="sticky-footer bg-white">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>Copyright &copy; by Ben, Joanne, Connor and Bella</span>
-          </div>
-        </div>
-      </footer>
-      <!-- End of Footer -->
-
     </div>
-    <!-- End of Content Wrapper -->
+
+
+  </div>
+
+  <!-- Content Row -->
+
+
+  </div>
+  <!-- /.container-fluid -->
+
+  </div>
+  <!-- End of Main Content -->
+
+  <!-- Footer -->
+  <footer class="sticky-footer bg-white">
+    <div class="container my-auto">
+      <div class="copyright text-center my-auto">
+        <span>Copyright &copy; by Ben, Joanne, Connor and Bella</span>
+      </div>
+    </div>
+  </footer>
+  <!-- End of Footer -->
+
+  </div>
+  <!-- End of Content Wrapper -->
 
   </div>
   <!-- End of Page Wrapper -->
-
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
 
 </body>
 {{#if logged_in}}
 <script src="/js/logout.js"></script>
 {{else}}
 <script src="/js/placeholders.min.js"></script>
-<script src="/js/main.js"></script> <!-- Resource JavaScript -->
+<script src="/js/main.js"></script>
 <script src="/js/login.js"></script>
 {{/if}}
 
