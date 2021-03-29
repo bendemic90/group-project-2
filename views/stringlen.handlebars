@@ -1,0 +1,24 @@
+<h3>Definition:</h3><p>
+    The search method within string will search a string using powerful regular expressions.<br>
+    It will return the position of the match within the string<br>
+    While this method takes a regular expression you can, however, just add a simple string in as the match case to find exact terms.<br>
+    </p>
+    <hr>
+    <h3>Example 1: The Basics</h3>
+    <code>
+        const str = <em>"Hello World"</em> <br>
+        const <b>match</b> = str.<b>search</b>("World") <br>
+        return <b>match</b>; // <em>6</em><br>
+        Will return the index where the match is made:    
+    </code>
+    <hr>
+    <h3>Example 2: Passing a regular expression as the parameter</h3>
+    <code>
+        const regex = '/^\d+$/' <br><br>
+        const strsearch = (regex) => { <br>
+            return !(num % 2); <br>
+        } <br>
+        This function will return TRUE if the number is EVEN, and FALSE if the number is ODD<br><br>
+        const map = array.map(num => evenNum(num));<br>
+        return map; // <em>[true, true, false, false, false, true]</em>
+    </code>
